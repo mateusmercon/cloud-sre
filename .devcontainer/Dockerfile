@@ -12,3 +12,5 @@ EXPOSE 8000
 # RUN apt-get update \
 #     && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
