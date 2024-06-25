@@ -1,4 +1,13 @@
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Hello World! Django is running!")
+    html_content = """
+    <html>
+    <head><title>Meu Perfil</title></head>
+    <body>
+        <h1>Mateus Neves Merçon</h1>
+        <h2>Cloud Computing & Site Reliability Engineering</h2>
+    </body>
+    </html>
+    """
+    return HttpResponse(html_content)
