@@ -14,7 +14,7 @@ EXPOSE 8000
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 # Set the working directory to the project root (one level up from .devcontainer)
-WORKDIR /workspace
+WORKDIR /
 
 # Copy the rest of the project files into the working directory
 COPY . ..
